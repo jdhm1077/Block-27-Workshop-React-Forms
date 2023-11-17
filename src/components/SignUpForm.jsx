@@ -8,7 +8,12 @@ const SignUpForm = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
-   
+   //define an async function called "handleSubmit"
+   const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent page refresh
+    console.log('Form submitted!');
+   }
+
     return (
     <>
     <h2>Sign Up!</h2>
