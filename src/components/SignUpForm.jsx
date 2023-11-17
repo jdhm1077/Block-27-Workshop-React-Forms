@@ -17,13 +17,14 @@ const SignUpForm = () => {
     return (
     <>
     <h2>Sign Up!</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>
-                Username: <input value={username} onChange={(e) => (e. target. value)} type="submit" />
+                Username: <input value={username} onChange={(event) => (event. target. value)} />
                 </label>
                 <label>
-                Password: <input type="submit" />
+                Password: <input value={password} onChange={(event) => (event. target. value)}/>
                 </label>
+                <button>Submit</button>
             </form>
     </>
 )};
