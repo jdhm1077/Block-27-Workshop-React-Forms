@@ -6,21 +6,22 @@ import { useState } from "react";
 
 const SignUpForm = () => {
     const [username, setUsername] = useState("");
-const [password, setPassword] = useState("");
-const [error, setError] = useState(null);
-    return 
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState(null);
+   
+    return (
     <>
     <h2>Sign Up!</h2>
             <form>
                 <label>
-                Username: <input type="submit" />
+                Username: <input value={username} onChange={(e) => (e. target. value)} type="submit" />
                 </label>
                 <label>
                 Password: <input type="submit" />
                 </label>
             </form>
     </>
-};
+)};
 
 
 export default SignUpForm;
